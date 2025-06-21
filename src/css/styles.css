@@ -1,0 +1,119 @@
+/* Reset and resize the box for consistency */
+/* Apply a universal reset for consistent styling */
+*, *::before, *::after {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* Set global styles for the body */
+body {
+    font-family: Arial, sans-serif; 
+    background: #f9f9f9; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 60%; 
+    line-height: 1.5; 
+}
+
+/* Style for images */
+img {
+    width: 200px; 
+}
+
+/* Header section styling */
+header {
+    background: #b16b6b; 
+    color: #fff;
+    text-align: center; 
+}
+
+/* Footer section styling */
+footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #b16b6b;
+    color: white; 
+    text-align: center; 
+    padding: 5px; 
+}
+
+/* Center the main section using Flexbox */
+main {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem; 
+}
+
+/* Form container styling */
+section.formulario {
+    background: #fff; 
+    padding: 1.5rem;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+    width: 100%; 
+    max-width: 400px; 
+}
+
+/* Flexbox layout for the form */
+.myForm {
+    display: flex; /* Use flexbox */
+    flex-direction: column; 
+}
+
+/* Style for labels */
+.myForm label {
+    margin-top: 1rem; 
+    font-weight: bold; 
+}
+
+/* Style for input fields */
+.myForm input {
+    padding: 0.6rem; 
+    font-size: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    width: 100%; 
+}
+
+/* Style for buttons */
+.myForm button {
+    margin-top: 1.5rem; 
+    padding: 0.8rem; 
+    font-size: 1rem; 
+    background: #007BFF; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+}
+
+.myForm button:hover,
+.myForm button:focus {
+    background: #0056b3; 
+    outline: none; 
+}
+
+/* Result messages */
+#resultado {
+    margin-top: 1rem; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) {
+    section.formulario {
+        padding: 1rem; 
+        margin: 0 1rem; 
+    }
+
+    .myForm input,
+    .myForm button {
+        font-size: 0.9rem; 
+        padding: 0.6rem; 
+    }
+}
